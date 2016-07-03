@@ -1,5 +1,7 @@
 # microservices-dashboard
 
+[![Join the chat at https://gitter.im/ordina-jworks/microservices-dashboard](https://badges.gitter.im/ordina-jworks/microservices-dashboard.svg)](https://gitter.im/ordina-jworks/microservices-dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Overview
 
 The primary goal of this project is to visualize links between microservices and the encompassing ecosystem.
