@@ -1,0 +1,57 @@
+{
+  "name": "url-join",
+  "version": "1.1.0",
+  "description": "Join urls and normalize as in path.join.",
+  "main": "lib/url-join.js",
+  "scripts": {
+    "test": "mocha --require should"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jfromaniello/url-join.git"
+  },
+  "keywords": [
+    "url",
+    "join"
+  ],
+  "author": {
+    "name": "José F. Romaniello",
+    "email": "jfromaniello@gmail.com",
+    "url": "http://joseoncode.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "should": "~1.2.1",
+    "mocha": "~1.8.1"
+  },
+  "gitHead": "3144ba1acbfcee988d6abb3b2be1df532f0e151c",
+  "bugs": {
+    "url": "https://github.com/jfromaniello/url-join/issues"
+  },
+  "homepage": "https://github.com/jfromaniello/url-join#readme",
+  "_id": "url-join@1.1.0",
+  "_shasum": "741c6c2f4596c4830d6718460920d0c92202dc78",
+  "_from": "url-join@>=1.0.0 <2.0.0",
+  "_npmVersion": "2.15.1",
+  "_nodeVersion": "4.4.2",
+  "_npmUser": {
+    "name": "jfromaniello",
+    "email": "jfromaniello@gmail.com"
+  },
+  "dist": {
+    "shasum": "741c6c2f4596c4830d6718460920d0c92202dc78",
+    "tarball": "https://registry.npmjs.org/url-join/-/url-join-1.1.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jfromaniello",
+      "email": "jfromaniello@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/url-join-1.1.0.tgz_1459856865965_0.46360294660553336"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/url-join/-/url-join-1.1.0.tgz"
+}

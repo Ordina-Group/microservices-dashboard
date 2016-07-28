@@ -1,0 +1,165 @@
+{
+  "name": "karma-chrome-launcher",
+  "version": "1.0.1",
+  "description": "A Karma plugin. Launcher for Chrome and Chrome Canary.",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/karma-runner/karma-chrome-launcher.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-launcher",
+    "chrome"
+  ],
+  "author": {
+    "name": "Vojta Jina",
+    "email": "vojta.jina@gmail.com"
+  },
+  "dependencies": {
+    "fs-access": "^1.0.0",
+    "which": "^1.2.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "eslint": "^1.6.0",
+    "eslint-config-standard": "^4.4.0",
+    "eslint-plugin-standard": "^1.3.1",
+    "grunt": "^0.4.1",
+    "grunt-auto-release": "^0.0.6",
+    "grunt-bump": "^0.6.0",
+    "grunt-conventional-changelog": "^5.0.0",
+    "grunt-conventional-github-releaser": "^0.5.0",
+    "grunt-eslint": "^17.2.0",
+    "grunt-karma": "1.x || ^0.12.1",
+    "grunt-npm": "^0.0.2",
+    "grunt-simple-mocha": "^0.4.0",
+    "jasmine-node": "^1.14.5",
+    "karma": "1.x || ^0.13.10",
+    "karma-mocha": "1.x || ^0.2.0",
+    "load-grunt-tasks": "^3.2.0",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.1"
+  },
+  "contributors": [
+    {
+      "name": "Mark Ethan Trostler",
+      "email": "mark@zzo.com"
+    },
+    {
+      "name": "dignifiedquire",
+      "email": "dignifiedquire@gmail.com"
+    },
+    {
+      "name": "Mark Trostler",
+      "email": "mark@zzo.com"
+    },
+    {
+      "name": "Friedel Ziegelmayer",
+      "email": "friedel.ziegelmayer@gmail.com"
+    },
+    {
+      "name": "Friedel Ziegelmayer",
+      "email": "dignifiedquire@gmail.com"
+    },
+    {
+      "name": "Filipe Guerra",
+      "email": "alias.mac@gmail.com"
+    },
+    {
+      "name": "Aymeric Beaumet",
+      "email": "aymeric@beaumet.me"
+    },
+    {
+      "name": "Andrey Taranov",
+      "email": "andrey.taranov@nordea.com"
+    },
+    {
+      "name": "Michał Gołębiowski",
+      "email": "m.goleb@gmail.com"
+    },
+    {
+      "name": "Parashuram N",
+      "email": "code@r.nparashuram.com"
+    },
+    {
+      "name": "Timo Tijhof",
+      "email": "krinklemail@gmail.com"
+    },
+    {
+      "name": "Vincent Voyer",
+      "email": "vincent.voyer@algolia.com"
+    },
+    {
+      "name": "Marko Vuksanovic",
+      "email": "markovuksanovic@gmail.com"
+    },
+    {
+      "name": "Jeff Cross",
+      "email": "middlefloor@gmail.com"
+    },
+    {
+      "name": "Joe Doyle",
+      "email": "valdain@gmail.com"
+    },
+    {
+      "name": "Julien Sanchez",
+      "email": "julien.sanchez@lim.eu"
+    },
+    {
+      "name": "Florian-R",
+      "email": "florian.r.dev@gmail.com"
+    },
+    {
+      "name": "Michał Gołębiowski",
+      "email": "m.goleb@gmail.com"
+    }
+  ],
+  "gitHead": "e9773b349b5e086de592df989e9a6d0600867031",
+  "bugs": {
+    "url": "https://github.com/karma-runner/karma-chrome-launcher/issues"
+  },
+  "homepage": "https://github.com/karma-runner/karma-chrome-launcher#readme",
+  "_id": "karma-chrome-launcher@1.0.1",
+  "_shasum": "be5ae7c4264f9a0a2e22e3d984beb325ad92c8cb",
+  "_from": "karma-chrome-launcher@>=1.0.1 <2.0.0",
+  "_npmVersion": "2.14.12",
+  "_nodeVersion": "4.3.0",
+  "_npmUser": {
+    "name": "zzo",
+    "email": "mark@zzo.com"
+  },
+  "dist": {
+    "shasum": "be5ae7c4264f9a0a2e22e3d984beb325ad92c8cb",
+    "tarball": "https://registry.npmjs.org/karma-chrome-launcher/-/karma-chrome-launcher-1.0.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "vojtajina",
+      "email": "vojta.jina+npm@gmail.com"
+    },
+    {
+      "name": "zzo",
+      "email": "mark@zzo.com"
+    },
+    {
+      "name": "dignifiedquire",
+      "email": "dignifiedquire@gmail.com"
+    },
+    {
+      "name": "karmarunnerbot",
+      "email": "karmarunnerbot@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/karma-chrome-launcher-1.0.1.tgz_1462228002489_0.3740630967076868"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/karma-chrome-launcher/-/karma-chrome-launcher-1.0.1.tgz",
+  "readme": "ERROR: No README data found!"
+}

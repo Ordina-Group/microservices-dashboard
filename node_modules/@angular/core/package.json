@@ -1,0 +1,50 @@
+{
+  "name": "@angular/core",
+  "version": "2.0.0-rc.4",
+  "description": "",
+  "main": "index.js",
+  "jsnext:main": "esm/index.js",
+  "typings": "index.d.ts",
+  "author": {
+    "name": "angular"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular/issues"
+  },
+  "homepage": "https://github.com/angular/angular#readme",
+  "_id": "@angular/core@2.0.0-rc.4",
+  "scripts": {},
+  "_shasum": "f3f98f906fcf0cb87d2c7d7f230ca95ea81cb6e0",
+  "_from": "@angular/core@2.0.0-rc.4",
+  "_resolved": "https://registry.npmjs.org/@angular/core/-/core-2.0.0-rc.4.tgz",
+  "_npmVersion": "3.9.2",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "angular",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "f3f98f906fcf0cb87d2c7d7f230ca95ea81cb6e0",
+    "tarball": "https://registry.npmjs.org/@angular/core/-/core-2.0.0-rc.4.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/core-2.0.0-rc.4.tgz_1467308861507_0.20231292047537863"
+  },
+  "directories": {}
+}

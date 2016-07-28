@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "declaration": false,
+        "allowJs": true
+    },
+    "exclude": [
+        "exclude",
+        "node_modules",
+        "bower_components"
+    ]
+}

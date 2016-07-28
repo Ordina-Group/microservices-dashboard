@@ -1,0 +1,59 @@
+{
+  "name": "@angular/router",
+  "version": "3.0.0-beta.2",
+  "description": "",
+  "main": "index.js",
+  "jsnext:main": "esm/index.js",
+  "keywords": [
+    "angular2",
+    "angular",
+    "router"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.git"
+  },
+  "author": {
+    "name": "angular"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/angular/issues"
+  },
+  "homepage": "https://github.com/angular/angular#readme",
+  "peerDependencies": {
+    "@angular/core": "^2.0.0-rc.4",
+    "@angular/compiler": "^2.0.0-rc.4",
+    "@angular/common": "^2.0.0-rc.4",
+    "@angular/platform-browser": "^2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.4",
+    "rxjs": "5.0.0-beta.6"
+  },
+  "typings": "index.d.ts",
+  "_id": "@angular/router@3.0.0-beta.2",
+  "scripts": {},
+  "_shasum": "99a42b8aba7cb4e2be4cde508d5f7d53f0715025",
+  "_from": "@angular/router@3.0.0-beta.2",
+  "_npmVersion": "3.9.5",
+  "_nodeVersion": "6.2.2",
+  "_npmUser": {
+    "name": "angular",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "99a42b8aba7cb4e2be4cde508d5f7d53f0715025",
+    "tarball": "https://registry.npmjs.org/@angular/router/-/router-3.0.0-beta.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/router-3.0.0-beta.2.tgz_1467323895728_0.9900497584603727"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/@angular/router/-/router-3.0.0-beta.2.tgz"
+}
