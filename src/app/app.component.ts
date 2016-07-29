@@ -4,6 +4,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
+import {Msdtopbar} from "./topbar/topbar.component";
 
 /*
  * App Component
@@ -15,7 +16,9 @@ import { AppState } from './app.service';
   styleUrls: [
     './app.style.css'
   ],
+  directives: [Msdtopbar],
   template: `
+    <msd-topbar></msd-topbar>
     <nav>
       <span>
         <a [routerLink]=" ['./'] ">

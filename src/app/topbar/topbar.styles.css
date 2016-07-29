@@ -1,0 +1,14 @@
+.top-bar-container{
+    border-top:4px solid white;
+}
+li.logo-msg{
+    padding-top: 5px;
+    color:white;
+    font-size: 9px;
+}
+
+.settings{
+    li{
+        text-align: center;
+    }
+}
