@@ -1,4 +1,11 @@
-node_modules/
 .DS_Store
+.tmp/
+
 .idea/
-.idea/workspace.xml
+*.iml
+
+node_modules/
+bower_components/
+
+dist/
+target/
