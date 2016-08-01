@@ -29,6 +29,9 @@ git clone --depth 1 https://github.com/ordina-jworks/microservices-dashboard.git
 # change directory to our repo
 cd microservices-dashboard
 
+# checkout the ng2 branch
+git checkout -b angular2 remotes/origin/ng2
+
 # install the repo with npm
 npm install
 
@@ -38,8 +41,6 @@ npm start
 # use Hot Module Replacement
 npm run server:dev:hmr
 
-# if you're in China use cnpm
-# https://github.com/cnpm/cnpm
 ```
 go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http://localhost:3000) in your browser
 
@@ -240,83 +241,3 @@ If you're importing a module that uses Node.js modules which are CommonJS you ne
 ```typescript
 import * as _ from 'lodash';
 ```
-
-
-# Frequently asked questions
-* What's the current browser support for Angular 2 Beta?
-  * Please view the updated list of [browser support for Angular 2](https://github.com/angularclass/awesome-angular2#current-browser-support-for-angular-2)
-* Why is my service, aka provider, is not injecting parameter correctly?
-  * Please use `@Injectable()` for your service for typescript to correctly attach the metadata (this is a TypeScript problem)
-* How do I run protractor with node 0.12.x?
-  * please check out this repo to use the old version of protractor [#146](https://github.com/AngularClass/angular2-webpack-starter/pull/146/files)
-* Where do I write my tests?
-  * You can write your tests next to your component files. See [`/src/app/home/home.spec.ts`](/src/app/home/home.spec.ts)
-* How do I start the app when I get `EACCES` and `EADDRINUSE` errors?
-  * The `EADDRINUSE` error means the port `3000` is currently being used and `EACCES` is lack of permission for webpack to build files to `./dist/`
-* How to use `sass` for css?
- * `loaders: ['raw-loader','sass-loader']` and `@Component({ styles: [ require('./filename.scss') ] })` see issue [#136](https://github.com/AngularClass/angular2-webpack-starter/issues/136)
-* How do I test a Service?
- * See issue [#130](https://github.com/AngularClass/angular2-webpack-starter/issues/130#issuecomment-158872648)
-* How do I add `vscode-chrome-debug` support?
- * The VS Code chrome debug extension support can be done via `launch.json` see issue [#144](https://github.com/AngularClass/angular2-webpack-starter/issues/144#issuecomment-164063790)
-* How do I make the repo work in a virtual machine?
- * You need to use `0.0.0.0` so revert these changes [#205](https://github.com/AngularClass/angular2-webpack-starter/pull/205/files)
-* What are the naming conventions for Angular 2?
- * please see issue [#185](https://github.com/AngularClass/angular2-webpack-starter/issues/185) and PR [196](https://github.com/AngularClass/angular2-webpack-starter/pull/196)
-* How do I include bootstrap or jQuery?
- * please see issue [#215](https://github.com/AngularClass/angular2-webpack-starter/issues/215) and [#214](https://github.com/AngularClass/angular2-webpack-starter/issues/214#event-511768416)
-* How do I async load a component?
- * see wiki [How-do-I-async-load-a-component-with-AsyncRoute](https://github.com/AngularClass/angular2-webpack-starter/wiki/How-do-I-async-load-a-component-with-AsyncRoute)
-* Error: Cannot find module 'tapable'
- * Remove `node_modules/` and run `npm cache clean` then `npm install`
-* What about Webpack 2?
- * If you're looking for Webpack 2 version then see the [experimental version](https://github.com/gdi2290/angular2-webpack2-starter) that will be merged soon.
-* How do I turn on Hot Module Replacement
- * Run `npm run server:dev:hmr`
-* `RangeError: Maximum call stack size exceeded`
- * This is a problem with minifying Angular 2 and it's recent JIT templates. If you set `mangle` to `false` then you should be good.
-* Why is the size of my app larger in development?
- * We are using inline source-maps and hot module replacement which will increase the bundle size.
-* If you're in China
- * check out https://github.com/cnpm/cnpm
-* If you're looking to add Angular 2 Material Design
- * check out the [material2](https://github.com/AngularClass/angular2-webpack-starter/tree/material2) branch
-* node-pre-gyp ERR in npm install (Windows)
- * install Python x86 version between 2.5 and 3.0 on windows see issue [#626](https://github.com/AngularClass/angular2-webpack-starter/issues/626)
-* `Error:Error: Parse tsconfig error [{"messageText":"Unknown compiler option 'lib'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'strictNullChecks'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'baseUrl'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'paths'.","category":1,"code":5023},{"messageText":"Unknown compiler option 'types'.","category":1,"code":5023}]`
- * remove `node_modules/typescript` and run `npm install typescript@beta`. This repo now uses ts 2.0 
-
-# Support, Questions, or Feedback
-> Contact us anytime for anything about this repo or Angular 2
-
-* [Chat: AngularClass.slack](http://angularclass.com/member-join/)
-* [Twitter: @AngularClass](https://twitter.com/AngularClass)
-* [Gitter: AngularClass/angular2-webpack-starter](https://gitter.im/angularclass/angular2-webpack-starter)
-
-# Quick Start Guides
-
-## Nitrous
-
-You can quickly create a free development environment to get started using this
-starter kit in the cloud on [Nitrous](https://www.nitrous.io/):
-
-<a href="https://www.nitrous.io/quickstart?repo=https://github.com/nitrous-io/angular2-webpack-starter">
-  <img src="https://nitrous-image-icons.s3.amazonaws.com/quickstart.png" alt="Nitrous Quickstart" width=142 height=34>
-</a>
-
-Simply run `HOST=0.0.0.0 npm start` from the terminal inside of
-`~/code/angular2-webpack-starter` and access your site via the "Preview > 3000"
-link in the IDE.
-___
-
-enjoy — **AngularClass**
-
-<br><br>
-
-[![AngularClass](https://cloud.githubusercontent.com/assets/1016365/9863770/cb0620fc-5af7-11e5-89df-d4b0b2cdfc43.png  "Angular Class")](https://angularclass.com)
-##[AngularClass](https://angularclass.com)
-> Learn AngularJS, Angular 2, and Modern Web Development from the best.
-> Looking for corporate Angular training, want to host us, or Angular consulting? patrick@angularclass.com
-
-# License
- [MIT](/LICENSE)
