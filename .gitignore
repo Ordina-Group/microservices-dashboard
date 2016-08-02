@@ -3,9 +3,11 @@
 
 .idea/
 *.iml
+.vscode/
 
 node_modules/
 bower_components/
+typings/
 
 dist/
 target/
