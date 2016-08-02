@@ -15,7 +15,7 @@ As a contributor, here are the guidelines we would like you to follow:
 
 ## <a name="coc"></a> Code of Conduct
 
-This project adheres to the Contributor Covenant [code of conduct][1]. By participating,
+This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.MD). By participating,
 you are expected to uphold this code. Please report unacceptable behavior to
 andreas [dot] evers [at] ordina [dot] be.
 
