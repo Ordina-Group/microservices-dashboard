@@ -1,14 +1,40 @@
 .top-bar-container{
-    border-top:4px solid white;
+    border-top: 4px solid #6db33f;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
-li.logo-msg{
+.top-bar-container h1{
+    flex-grow: 0;
+    padding: 10px 20px;
+}
+
+.top-bar-container .title-area a{
+    align-self: center;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 1.375rem;
+    text-decoration: none;
+}
+
+.top-bar-container .title-area img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top-bar-container span{
+    flex-grow: 2;
+}
+
+.top-bar-container h1, .top-bar-container span{
+    background: #34302d;
+    margin: 0;
+}
+
+div.logo-msg{
     padding-top: 5px;
-    color:white;
+    color:#6db33f;
     font-size: 9px;
 }
 
-.settings{
-    li{
-        text-align: center;
-    }
-}
+

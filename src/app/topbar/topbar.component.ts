@@ -10,16 +10,14 @@ import { Component } from '@angular/core';
     selector: 'msd-topbar',
     template: `
 <div class="top-bar-container">
-
-    <ul class="title-area">
-      <li class="name">
-        <h1>
-          <a href="#"><img src="icon.png" width="50" /> Microservices Dashboard</a>
-        </h1>
-      </li>
-    </ul>
-
-</div>  `,
+    <h1 class="title-area">
+          <a href="#"><img src="./assets/img/icon.png" width="50" /> Microservices Dashboard</a>
+    </h1>
+    <span class="left">
+        <div class="logo-msg">Logo created by Vicons Design from the Noun Project</div>
+    </span>
+</div>  
+`,
     styleUrls: ['topbar.styles.css']
 })
 export class Msdtopbar {
