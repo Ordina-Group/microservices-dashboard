@@ -1,0 +1,1130 @@
+{
+    "graph": {
+        "directed": true,
+        "types": [
+            "DB",
+            "MICROSERVICE",
+            "REST",
+            "SOAP",
+            "JMS",
+            "RESOURCE"
+        ],
+        "nodes": [
+            {
+                "details": {
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "user-preferences",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "status": "UP"
+                },
+                "id": "hystrix",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "total": 2046640128,
+                    "threshold": 10485760,
+                    "free": 1592283136,
+                    "status": "UP"
+                },
+                "id": "diskSpace",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "propertySources": [
+                        "overrides"
+                    ],
+                    "status": "UP"
+                },
+                "id": "configServer",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "discoveryClient": {
+                        "description": "Spring Cloud Eureka Discovery Client",
+                        "status": "UP",
+                        "services": [
+                            "webshop-catalogue",
+                            "customer-group",
+                            "customer-base",
+                            "customer-access",
+                            "ordering-pets",
+                            "user-avatar",
+                            "tariff-charges",
+                            "admin",
+                            "pizza-feedback",
+                            "pizza-transactions",
+                            "user-preferences",
+                            "customer-addresses",
+                            "shop-management",
+                            "products",
+                            "address",
+                            "zuul",
+                            "customer-finance",
+                            "encryption",
+                            "transport",
+                            "loyalty-program",
+                            "web-feedback",
+                            "shopping-basket",
+                            "payment-gateway",
+                            "installbase",
+                            "billing-complaints",
+                            "hystrix",
+                            "italian-food",
+                            "pizza-stock",
+                            "offers",
+                            "billing-replicator",
+                            "usage",
+                            "customer-gear",
+                            "prices",
+                            "awards",
+                            "billing-payments",
+                            "user",
+                            "customer-access-numbers",
+                            "customer-administrators",
+                            "pizza-management",
+                            "billing-accounts",
+                            "marketing",
+                            "agenda",
+                            "customer-management",
+                            "company-cars",
+                            "order-processor",
+                            "webshop-accounts",
+                            "ordering-cakes",
+                            "bill-downloader"
+                        ]
+                    },
+                    "eureka": {
+                        "description": "Remote status from Eureka server",
+                        "status": "UP",
+                        "applications": {
+                            "WEBSHOP-CATALOGUE": 1,
+                            "ARCHETYPE-TEST": 0,
+                            "CUSTOMER-GROUP": 1,
+                            "CUSTOMER-BASE": 1,
+                            "CUSTOMER-ACCESS": 1,
+                            "ORDERING-PETS": 1,
+                            "USER-AVATAR": 1,
+                            "RENUNCIATION": 0,
+                            "TARIFF-CHARGES": 2,
+                            "ADMIN": 1,
+                            "PIZZA-FEEDBACK": 1,
+                            "BILL-DOWNLOADER": 1,
+                            "PIZZA-TRANSACTIONS": 1,
+                            "USER-PREFERENCES": 1,
+                            "CUSTOMER-ADDRESSES": 1,
+                            "ORDERING-CAKES": 1,
+                            "SHOP-MANAGEMENT": 1,
+                            "PRODUCTS": 1,
+                            "ADDRESS": 1,
+                            "ZUUL": 1,
+                            "CUSTOMER-FINANCE": 1,
+                            "ENCRYPTION": 1,
+                            "TRANSPORT": 1,
+                            "WEBSHOP-ACCOUNTS": 1,
+                            "LOYALTY-PROGRAM": 2,
+                            "WEB-FEEDBACK": 1,
+                            "SHOPPING-BASKET": 1,
+                            "PAYMENT-GATEWAY": 1,
+                            "INSTALLBASE": 1,
+                            "BILLING-COMPLAINTS": 1,
+                            "HYSTRIX": 1,
+                            "ITALIAN-FOOD": 1,
+                            "PIZZA-STOCK": 1,
+                            "OFFERS": 1,
+                            "PREPAID-IDENTIFICATION": 0,
+                            "BILLING-REPLICATOR": 1,
+                            "USAGE": 1,
+                            "CUSTOMER-GEAR": 1,
+                            "ORDER-PROCESSOR": 1,
+                            "PRICES": 1,
+                            "AWARDS": 1,
+                            "BILLING-PAYMENTS": 1,
+                            "EUREKA": 0,
+                            "USER": 1,
+                            "CUSTOMER-ACCESS-NUMBERS": 1,
+                            "ORDERING-LOYALTY": 0,
+                            "CUSTOMER-ADMINISTRATORS": 1,
+                            "PIZZA-MANAGEMENT": 1,
+                            "BILLING-ACCOUNTS": 1,
+                            "MARKETING": 1,
+                            "AGENDA": 1,
+                            "CUSTOMER-MANAGEMENT": 1,
+                            "COMPANY-CARS": 1
+                        }
+                    },
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "status": "UP"
+                },
+                "id": "discoveryComposite",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "customer-group",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "status": "UNKNOWN",
+                    "group": "ASL"
+                },
+                "id": "aslEmployee",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "customer-base",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "Group 2.0 (since 2013 CYCLE2)",
+                    "status": "UP",
+                    "group": "ASL"
+                },
+                "id": "aslGroup",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "user-avatar",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "database": "Microsoft SQL Server",
+                    "hello": 1,
+                    "status": "UP"
+                },
+                "id": "db",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "UI_COMPONENT",
+                    "url": "http://localhost:8089/pacts/provider/Animal-Service/consumer/Zoo-App/latest",
+                    "status": "UP"
+                },
+                "id": "Zoo App",
+                "lane": 0
+            },
+            {
+                "details": {
+                    "type": "UI_COMPONENT",
+                    "url": "http://localhost:8089/pacts/provider/ordering-pets/consumer/pet-store-catalog-view/latest",
+                    "status": "UP"
+                },
+                "id": "pet-store-catalog-view",
+                "lane": 0
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ACC"
+                },
+                "id": "accAccountSOAPService",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "error": "be.ordina.BackendNotAvailableException: TIMEOUT",
+                    "status": "DOWN"
+                },
+                "id": "pnaBillingAccountManagement",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "status": "UNKNOWN",
+                    "group": "PNA"
+                },
+                "id": "pnaBillingAccountSearch",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "DOWN"
+                },
+                "id": "agenda",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "shop-management",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ENGP"
+                },
+                "id": "engpEligibleLoyaltyProgram",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ENGP"
+                },
+                "id": "engpTransferEligibility",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ENGP"
+                },
+                "id": "engpEnrollment",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "loyalty-program",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ENGP"
+                },
+                "id": "engpPointsManagement",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ENGP"
+                },
+                "id": "engpLoyaltyDetails",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "1.9",
+                    "status": "UP",
+                    "group": "OCT"
+                },
+                "id": "octLoyaltyManagement",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ENGP"
+                },
+                "id": "engpTransactionsPerMonth",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "minVersion": "1.0.2",
+                    "type": "MICROSERVICE",
+                    "version": "1.4.0",
+                    "status": "UP",
+                    "group": "FUNCTIONAL"
+                },
+                "id": "user",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ENGP"
+                },
+                "id": "engpTransferPoints",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "provider": "SonicMQ/Java",
+                    "domain": "esb_s21",
+                    "broker": "tcp://huehs02992:2506,tcp://huehs02993:2506",
+                    "status": "UP",
+                    "username": "andreasevers"
+                },
+                "id": "jms",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "database": "Oracle",
+                    "hello": "Hello",
+                    "type": "DB",
+                    "status": "UP",
+                    "group": "STC"
+                },
+                "id": "stockDataSource_",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "JMS",
+                    "status": "UNKNOWN",
+                    "group": "CSA"
+                },
+                "id": "csaMaterialReservationQueue",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "REST",
+                    "status": "UNKNOWN",
+                    "group": "STC"
+                },
+                "id": "stockVerification",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "database": "Microsoft SQL Server",
+                    "hello": 1,
+                    "type": "DB",
+                    "status": "UP",
+                    "group": "PRD"
+                },
+                "id": "productCacheDataSource_",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "pizza-stock",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "1.0",
+                    "status": "UP",
+                    "group": "SAP"
+                },
+                "id": "sapStockCheck",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "database": "Oracle",
+                    "hello": "Hello",
+                    "type": "DB",
+                    "status": "UP",
+                    "group": "PRD"
+                },
+                "id": "productDataSource_",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "awards",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "pizza-feedback",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "ENGP"
+                },
+                "id": "engpAwardsEligibility",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "REST",
+                    "status": "UNKNOWN",
+                    "group": "PTT"
+                },
+                "id": "pttAwards",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "REST",
+                    "status": "UNKNOWN",
+                    "group": "PTT"
+                },
+                "id": "pttAwardsDetails",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "web-feedback",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "database": "Microsoft SQL Server",
+                    "hello": 1,
+                    "type": "DB",
+                    "status": "UP",
+                    "group": "WEB"
+                },
+                "id": "webFeedbackDataSource_",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "REST",
+                    "version": "",
+                    "status": "UP",
+                    "group": "APS"
+                },
+                "id": "carBackingService",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "company-cars",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "JMS",
+                    "status": "UNKNOWN",
+                    "group": "SIL"
+                },
+                "id": "silMsVerification",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "ordering-pets",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "JMS",
+                    "status": "UNKNOWN",
+                    "group": "SIL"
+                },
+                "id": "silOrder",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "customer-access",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "REST",
+                    "status": "UNKNOWN",
+                    "group": "CSA"
+                },
+                "id": "csaCustomerAccess",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "5.0.32242.23604",
+                    "status": "UP",
+                    "group": "FIR"
+                },
+                "id": "firAccessSOAPService",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "offers",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "version": "",
+                    "status": "UP",
+                    "group": "MDE"
+                },
+                "id": "mdeDal",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "database": "Microsoft SQL Server",
+                    "hello": 1,
+                    "type": "DB",
+                    "status": "UP",
+                    "group": "OFFERS"
+                },
+                "id": "offersDataSource_",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "marketing",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "JMS",
+                    "status": "UNKNOWN",
+                    "group": "LMPG"
+                },
+                "id": "lmpgCustomerOrderManagement",
+                "lane": 3
+            },
+            {
+                "details": {
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "tariff-charges",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "description": "Spring Cloud Eureka Discovery Client",
+                    "type": "MICROSERVICE",
+                    "status": "UP"
+                },
+                "id": "usage",
+                "lane": 2
+            },
+            {
+                "details": {
+                    "type": "SOAP",
+                    "status": "UNKNOWN",
+                    "group": "AMB"
+                },
+                "id": "ambProvisioningApi",
+                "lane": 3
+            }
+        ],
+        "lanes": [
+            {
+                "type": "UI Components",
+                "lane": 0
+            },
+            {
+                "type": "Resources",
+                "lane": 1
+            },
+            {
+                "type": "Microservices",
+                "lane": 2
+            },
+            {
+                "type": "Backends",
+                "lane": 3
+            }
+        ],
+        "links": [
+            {
+                "source": 21,
+                "target": 1
+            },
+            {
+                "source": 16,
+                "target": 2
+            },
+            {
+                "source": 17,
+                "target": 4
+            },
+            {
+                "source": 17,
+                "target": 3
+            },
+            {
+                "source": 17,
+                "target": 2
+            },
+            {
+                "source": 16,
+                "target": 3
+            },
+            {
+                "source": 17,
+                "target": 1
+            },
+            {
+                "source": 16,
+                "target": 1
+            },
+            {
+                "source": 21,
+                "target": 27
+            },
+            {
+                "source": 21,
+                "target": 26
+            },
+            {
+                "source": 21,
+                "target": 25
+            },
+            {
+                "source": 21,
+                "target": 24
+            },
+            {
+                "source": 21,
+                "target": 23
+            },
+            {
+                "source": 21,
+                "target": 22
+            },
+            {
+                "source": 21,
+                "target": 20
+            },
+            {
+                "source": 21,
+                "target": 19
+            },
+            {
+                "source": 21,
+                "target": 18
+            },
+            {
+                "source": 5,
+                "target": 1
+            },
+            {
+                "source": 7,
+                "target": 3
+            },
+            {
+                "source": 7,
+                "target": 2
+            },
+            {
+                "source": 7,
+                "target": 1
+            },
+            {
+                "source": 16,
+                "target": 14
+            },
+            {
+                "source": 16,
+                "target": 15
+            },
+            {
+                "source": 9,
+                "target": 4
+            },
+            {
+                "source": 16,
+                "target": 13
+            },
+            {
+                "source": 9,
+                "target": 3
+            },
+            {
+                "source": 9,
+                "target": 2
+            },
+            {
+                "source": 17,
+                "target": 10
+            },
+            {
+                "source": 9,
+                "target": 1
+            },
+            {
+                "source": 21,
+                "target": 4
+            },
+            {
+                "source": 21,
+                "target": 3
+            },
+            {
+                "source": 16,
+                "target": 4
+            },
+            {
+                "source": 21,
+                "target": 2
+            },
+            {
+                "source": 48,
+                "target": 2
+            },
+            {
+                "source": 54,
+                "target": 3
+            },
+            {
+                "source": 54,
+                "target": 1
+            },
+            {
+                "source": 48,
+                "target": 3
+            },
+            {
+                "source": 51,
+                "target": 4
+            },
+            {
+                "source": 51,
+                "target": 3
+            },
+            {
+                "source": 54,
+                "target": 28
+            },
+            {
+                "source": 48,
+                "target": 1
+            },
+            {
+                "source": 51,
+                "target": 2
+            },
+            {
+                "source": 51,
+                "target": 1
+            },
+            {
+                "source": 56,
+                "target": 4
+            },
+            {
+                "source": 56,
+                "target": 2
+            },
+            {
+                "source": 57,
+                "target": 4
+            },
+            {
+                "source": 5,
+                "target": 8
+            },
+            {
+                "source": 7,
+                "target": 10
+            },
+            {
+                "source": 57,
+                "target": 3
+            },
+            {
+                "source": 57,
+                "target": 2
+            },
+            {
+                "source": 56,
+                "target": 3
+            },
+            {
+                "source": 5,
+                "target": 6
+            },
+            {
+                "source": 57,
+                "target": 1
+            },
+            {
+                "source": 56,
+                "target": 1
+            },
+            {
+                "source": 5,
+                "target": 4
+            },
+            {
+                "source": 5,
+                "target": 3
+            },
+            {
+                "source": 5,
+                "target": 2
+            },
+            {
+                "source": 7,
+                "target": 4
+            },
+            {
+                "source": 37,
+                "target": 1
+            },
+            {
+                "source": 48,
+                "target": 50
+            },
+            {
+                "source": 36,
+                "target": 1
+            },
+            {
+                "source": 33,
+                "target": 4
+            },
+            {
+                "source": 33,
+                "target": 3
+            },
+            {
+                "source": 44,
+                "target": 4
+            },
+            {
+                "source": 51,
+                "target": 53
+            },
+            {
+                "source": 33,
+                "target": 2
+            },
+            {
+                "source": 51,
+                "target": 52
+            },
+            {
+                "source": 57,
+                "target": 58
+            },
+            {
+                "source": 33,
+                "target": 1
+            },
+            {
+                "source": 44,
+                "target": 2
+            },
+            {
+                "source": 46,
+                "target": 4
+            },
+            {
+                "source": 48,
+                "target": 49
+            },
+            {
+                "source": 46,
+                "target": 2
+            },
+            {
+                "source": 33,
+                "target": 31
+            },
+            {
+                "source": 44,
+                "target": 3
+            },
+            {
+                "source": 33,
+                "target": 30
+            },
+            {
+                "source": 33,
+                "target": 29
+            },
+            {
+                "source": 44,
+                "target": 1
+            },
+            {
+                "source": 46,
+                "target": 3
+            },
+            {
+                "source": 41,
+                "target": 4
+            },
+            {
+                "source": 33,
+                "target": 28
+            },
+            {
+                "source": 41,
+                "target": 3
+            },
+            {
+                "source": 46,
+                "target": 1
+            },
+            {
+                "source": 41,
+                "target": 2
+            },
+            {
+                "source": 41,
+                "target": 1
+            },
+            {
+                "source": 54,
+                "target": 4
+            },
+            {
+                "source": 46,
+                "target": 28
+            },
+            {
+                "source": 36,
+                "target": 21
+            },
+            {
+                "source": 54,
+                "target": 2
+            },
+            {
+                "source": 48,
+                "target": 4
+            },
+            {
+                "source": 36,
+                "target": 10
+            },
+            {
+                "source": 36,
+                "target": 4
+            },
+            {
+                "source": 36,
+                "target": 2
+            },
+            {
+                "source": 37,
+                "target": 4
+            },
+            {
+                "source": 54,
+                "target": 55
+            },
+            {
+                "source": 37,
+                "target": 3
+            },
+            {
+                "source": 37,
+                "target": 2
+            },
+            {
+                "source": 36,
+                "target": 3
+            },
+            {
+                "source": 33,
+                "target": 35
+            },
+            {
+                "source": 33,
+                "target": 34
+            },
+            {
+                "source": 41,
+                "target": 42
+            },
+            {
+                "source": 33,
+                "target": 32
+            },
+            {
+                "source": 36,
+                "target": 40
+            },
+            {
+                "source": 36,
+                "target": 38
+            },
+            {
+                "source": 36,
+                "target": 39
+            },
+            {
+                "source": 46,
+                "target": 47
+            },
+            {
+                "source": 44,
+                "target": 43
+            },
+            {
+                "source": 46,
+                "target": 45
+            }
+        ],
+        "multigraph": false,
+        "graph": []
+    }
+}
