@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
  */
 @Component({
     selector: 'msd-filter',
-    templateUrl: `filter.html`
+    template: require('./filter.html')
 })
 export class Msdfilter {
 

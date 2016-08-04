@@ -5,6 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
 import {Msdtopbar} from "./topbar/topbar.component";
+import {Msdfilter} from "./filter/filter.component";
 
 /*
  * App Component
@@ -16,7 +17,7 @@ import {Msdtopbar} from "./topbar/topbar.component";
   styleUrls: [
     './app.style.css'
   ],
-  directives: [Msdtopbar],
+  directives: [Msdtopbar, Msdfilter],
   template: `
     <msd-topbar></msd-topbar>
   `

@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="filter">
+    <span>
+        <button type="button" class="refresh-filter">Refresh</button>
+    </span>
+    <span>
+        <input type="text" value="Enter node name">
+    </span>
+    <span>
+        <select class="states">
+            <option value="states" selected>states</option>
+            <option value="up">UP</option>
+            <option value="down">DOWN</option>
+            <option value="unknown">UNKNOWN</option>
+            <option value="virtual">VIRTUAL</option>
+        </select>
+    </span>
+    <span>
+        <select class="types">
+            <option value="resource" selected>RESOURCE</option>
+            <option value="microservice">MICROSERVICE</option>
+            <option value="db">DB</option>
+            <option value="soap">SOAP</option>
+            <option value="rest">REST</option>
+            <option value="jms">JMS</option>
+            <option value="ui_component">UI_COMPONENT</option>
+        </select>
+    </span>
+    <span>
+        <select class="groups">
+            <option value="groups" selected>groups</option>
+        </select>
+    </span>
+</div>
