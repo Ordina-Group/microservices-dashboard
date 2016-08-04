@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/throw';
 import { Endpoints } from './endpoints';
 import { MsdGraph } from '../models';
@@ -22,6 +23,9 @@ export class GraphService {
             .get(this._endPoints.graph)
             .map((response: Response) => {
                 const graph: MsdGraph = response.json();
+                if (graph.hasOwnProperty('graph') === false) {
+                    throw new Error();
+                }
                 return graph;
             })
             .catch((err: any, caught: Observable<MsdGraph>) => {
