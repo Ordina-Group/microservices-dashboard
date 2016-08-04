@@ -20,15 +20,5 @@ import { Component } from '@angular/core';
 `,
     styleUrls: ['topbar.styles.css']
 })
-export class Msdtopbar {
-
-    constructor() {
-
-    }
-
-    ngOnInit() {
-
-    }
-
-}
+export class Msdtopbar { }
 
