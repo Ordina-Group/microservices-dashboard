@@ -20,6 +20,7 @@ import {Msdfilter} from "./filter/filter.component";
   directives: [Msdtopbar, Msdfilter],
   template: `
     <msd-topbar></msd-topbar>
+    <msd-filter></msd-filter>
   `
 })
 export class App {
