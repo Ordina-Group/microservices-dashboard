@@ -3,31 +3,21 @@
         <button type="button" class="refresh-filter">Refresh</button>
     </span>
     <span>
-        <input type="text" value="Enter node name">
+        <input type="text" placeholder="Enter node name">
     </span>
     <span>
         <select class="states">
-            <option value="states" selected>states</option>
-            <option value="up">UP</option>
-            <option value="down">DOWN</option>
-            <option value="unknown">UNKNOWN</option>
-            <option value="virtual">VIRTUAL</option>
+            <option *ngFor="let state of statesFilter" value= {{state}}>{{state}}</option>
         </select>
     </span>
     <span>
         <select class="types">
-            <option value="resource" selected>RESOURCE</option>
-            <option value="microservice">MICROSERVICE</option>
-            <option value="db">DB</option>
-            <option value="soap">SOAP</option>
-            <option value="rest">REST</option>
-            <option value="jms">JMS</option>
-            <option value="ui_component">UI_COMPONENT</option>
+            <option *ngFor="let type of typesFilter" value= {{type}}>{{type}}</option>
         </select>
     </span>
     <span>
         <select class="groups">
-            <option value="groups" selected>groups</option>
+            <option *ngFor="let group of groupsFilter" value= {{group}}>{{group}}</option>
         </select>
     </span>
 </div>

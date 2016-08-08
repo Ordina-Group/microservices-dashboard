@@ -4,8 +4,9 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
-import {Msdtopbar} from "./topbar/topbar.component";
-import {Msdfilter} from "./filter/filter.component";
+import { Msdtopbar } from './topbar/topbar.component';
+import { Msdfilter } from './filter/filter.component';
+import { FilterService } from './services/filter.service';
 
 /*
  * App Component
@@ -21,7 +22,8 @@ import {Msdfilter} from "./filter/filter.component";
   template: `
     <msd-topbar></msd-topbar>
     <msd-filter></msd-filter>
-  `
+  `,
+  providers: [FilterService]
 })
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';
