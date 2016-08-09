@@ -14,8 +14,7 @@
     $rootScope, $http, $q,
 
     // constants
-    BASE_URL, REQUEST_GRAPH_DATA_SUCCESS
-
+    REQUEST_GRAPH_DATA_SUCCESS
   ) {
     var graph = {};
 
@@ -36,7 +35,7 @@
       getGroups: getGroups
     };
     function evict() {
-      return $http.post(BASE_URL + 'evictCache')
+      return $http.post('@@BASE_URL' + 'evictCache')
         .then(function(ok) {
           console.log('evict cache success');
         }, (function(bad) {
@@ -229,7 +228,7 @@
       $rootScope.dataLoading = true;
 
       return $http
-        .get(BASE_URL + 'graph')
+        .get('@@BASE_URL' + 'graph')
         .then(function(response) {
           var graphData = response.data;
           graphData.links = assignNodeToLinks(graphData.nodes, graphData.links);

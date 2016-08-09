@@ -121,8 +121,18 @@ bower install
 ```
 Use gulp to serve the resources using the configuration file:
 ```
-gulp serve:conf
+gulp serve
 ```
+Building the application
+```
+gulp build
+```
+If you want to build the dashboard to be run another server
+```
+gulp build --standalone
+```
+
+You can configure the dashboard server by modifying the **baseUrl** in gulp/conf.js
 
 Note:
 

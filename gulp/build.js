@@ -26,10 +26,12 @@ gulp.task('partials', function () {
 });
 
 gulp.task('html', ['inject', 'partials'], function () {
-  var partialsInjectFile = gulp.src(path.join(conf.paths.tmp, '/partials/templateCacheHtml.js'), { read: false });
+  var partialsInjectFiles = gulp.src(path.join(conf.paths.tmp, '/partials/**/*.js'));
   var partialsInjectOptions = {
     starttag: '<!-- inject:partials -->',
-    ignorePath: path.join(conf.paths.tmp, '/partials'),
+    transform: function (filePath, file) {
+      return file.contents.toString('utf8')
+    },
     addRootSlash: false
   };
 
@@ -39,15 +41,15 @@ gulp.task('html', ['inject', 'partials'], function () {
   var assets;
 
   return gulp.src(path.join(conf.paths.tmp, '/serve/*.html'))
-    .pipe($.inject(partialsInjectFile, partialsInjectOptions))
+    .pipe($.inject(partialsInjectFiles, partialsInjectOptions))
     .pipe(assets = $.useref.assets())
     .pipe($.rev())
     .pipe(jsFilter)
     .pipe($.ngAnnotate())
-    .pipe($.uglify({ preserveComments: $.uglifySaveLicense })).on('error', conf.errorHandler('Uglify'))
+    .pipe($.uglify({ preserveComments: $.uglifySaveLicense })).on('error', conf.errorHandler('Uglify js'))
     .pipe(jsFilter.restore())
     .pipe(cssFilter)
-    //.pipe($.csso())
+    .pipe($.csso()).on('error', conf.errorHandler('Minify css'))
     .pipe(cssFilter.restore())
     .pipe(assets.restore())
     .pipe($.useref())
@@ -58,7 +60,7 @@ gulp.task('html', ['inject', 'partials'], function () {
       spare: true,
       quotes: true,
       conditionals: true
-    }))
+    })).on('error', conf.errorHandler('Minify html'))
     .pipe(htmlFilter.restore())
     .pipe(gulp.dest(path.join(conf.paths.dist, '/')))
     .pipe($.size({ title: path.join(conf.paths.dist, '/'), showFiles: true }));
@@ -90,4 +92,4 @@ gulp.task('clean', function (done) {
   $.del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/')], done);
 });
 
-gulp.task('build', ['config', 'html', 'fonts', 'other']);
+gulp.task('build', ['html', 'fonts', 'other']);

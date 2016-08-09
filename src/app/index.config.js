@@ -11,7 +11,6 @@
 
   angular
     .module('microServicesGui')
-    .constant('BASE_URL', 'http://localhost:8080/')
 
     // lane numbers
     .constant('UI_LANE', 0)
@@ -23,7 +22,7 @@
     .constant('createModalConfig', modalConfig)
 
     // events
-    .constant('EVENT_SET_LANE_VISIBILITY','event:set:ui:lane:visibility')
+    .constant('EVENT_SET_LANE_VISIBILITY', 'event:set:ui:lane:visibility')
     .constant('EVENT_NODES_CHANGED', 'nodesChanged')
     .constant('REQUEST_GRAPH_DATA_SUCCESS', 'New:graph:data')
     .config(config);
