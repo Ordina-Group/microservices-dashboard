@@ -26,6 +26,16 @@
       <name>Andreas Evers</name>
       <email>andreas.evers@ordina.be</email>
     </developer>
+    <developer>
+      <id>timysewyn</id>
+      <name>Tim Ysewyn</name>
+      <email>tim.ysewyn@ordina.be</email>
+    </developer>
+    <developer>
+      <id>ryandegruyter</id>
+      <name>Ryan De Gruyter</name>
+      <email>ryan.degruyter@ordina.be</email>
+    </developer>
   </developers>
 
   <properties>
