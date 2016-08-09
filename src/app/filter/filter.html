@@ -1,22 +1,22 @@
-<div class="filter">
-    <span>
-        <button type="button" class="refresh-filter">Refresh</button>
+<div class="filter row">
+    <span class="btn-group col-md-2">
+        <button type="button" class="btn btn-default btn-block">Refresh</button>
     </span>
-    <span>
-        <input type="text" placeholder="Enter node name">
+    <span class="col-md-4">
+        <input type="text" placeholder="Enter node name" class="form-control">
     </span>
-    <span>
-        <select class="states">
+    <span class="col-md-2">
+        <select class="form-control">
             <option *ngFor="let state of statesFilter" value= {{state}}>{{state}}</option>
         </select>
     </span>
-    <span>
-        <select class="types">
+    <span class="col-md-2">
+        <select class="form-control">
             <option *ngFor="let type of typesFilter" value= {{type}}>{{type}}</option>
         </select>
     </span>
-    <span>
-        <select class="groups">
+    <span class="col-md-2">
+        <select class="form-control">
             <option *ngFor="let group of groupsFilter" value= {{group}}>{{group}}</option>
         </select>
     </span>

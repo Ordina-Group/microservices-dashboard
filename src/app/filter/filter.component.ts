@@ -10,7 +10,8 @@ import { FilterService } from '../services/filter.service';
 @Component({
     selector: 'msd-filter',
     template: require('./filter.html'),
-    providers: [FilterService]
+    providers: [FilterService],
+    styleUrls: ['filter.styles.css']
 })
 export class Msdfilter {
     public statesFilter: string[];

@@ -1,4 +1,5 @@
 export const STATES_FILTERS: string[] = [
+    'states',
     'UP',
     'DOWN',
     'UNKNOWN',
@@ -6,6 +7,7 @@ export const STATES_FILTERS: string[] = [
 ];
 
 export const TYPES_FILTERS: string[] = [
+    'types',
     'RESOURCE',
     'MICROSERVICE',
     'DB',
