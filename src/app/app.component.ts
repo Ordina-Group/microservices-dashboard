@@ -1,6 +1,6 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Inject, Component, ViewEncapsulation } from '@angular/core';
 import { Msdtopbar } from './topbar/topbar.component';
-
+import { BASE_ENDPOINT_TOKEN } from '../platform/environment-tokens';
 /*
  * App Component
  * Top Level Component
@@ -17,6 +17,9 @@ import { Msdtopbar } from './topbar/topbar.component';
   `
 })
 export class App {
+    constructor( @Inject(BASE_ENDPOINT_TOKEN) baseUrl: string) {
+        console.log(`URL: '${baseUrl}'`);
+    }
     ngOnInit() {
         console.log('Initial App State');
     }

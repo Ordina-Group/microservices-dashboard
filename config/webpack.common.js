@@ -4,6 +4,7 @@
 
 const webpack = require('webpack');
 const helpers = require('./helpers');
+const argv = require('yargs').argv;
 
 /*
  * Webpack Plugins
@@ -13,10 +14,13 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const HtmlElementsPlugin = require('./html-elements-plugin');
+const DefinePlugin = require('webpack/lib/DefinePlugin');
 
 /*
  * Webpack Constants
  */
+const DEFAULT_ENDPOINT = '';
+const BASE_ENDPOINT = argv.standalone ? argv.standalone : DEFAULT_ENDPOINT;
 const METADATA = {
   title: 'Microservices Dashboard Angular 2 version',
   baseUrl: '/',
@@ -267,7 +271,9 @@ module.exports = {
     new HtmlElementsPlugin({
       headTags: require('./head-config.common')
     }),
-
+    new DefinePlugin({
+      'BASE_ENDPOINT': JSON.stringify(BASE_ENDPOINT),
+    }),
   ],
 
   /*

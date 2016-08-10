@@ -1,4 +1,4 @@
-
+import { BASE_ENDPOINT_TOKEN } from './environment-tokens';
 // Angular 2
 // rc2 workaround
 import { enableDebugTools, disableDebugTools } from '@angular/platform-browser';
@@ -43,5 +43,6 @@ if ('production' === ENV) {
 export const decorateComponentRef = _decorateComponentRef;
 
 export const ENV_PROVIDERS = [
-  ...PROVIDERS
+  ...PROVIDERS,
+  {provide: BASE_ENDPOINT_TOKEN, useValue: BASE_ENDPOINT}
 ];

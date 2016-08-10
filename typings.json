@@ -1,6 +1,7 @@
 {
   "globalDevDependencies": {
-    "d3": "registry:dt/d3#0.0.0+20160727131401"
+    "d3": "registry:dt/d3#0.0.0+20160727131401",
+    "yargs": "registry:dt/yargs#0.0.0+20160808125142"
   },
   "dependencies": {
     "d3": "registry:npm/d3#3.0.0+20160723033700"
