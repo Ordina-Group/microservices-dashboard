@@ -123,7 +123,16 @@ npm run server
 npm run build:prod
 npm run server:prod
 ```
+## Standalone
+If your remote server API is configured on a different adress you have to add the **--standalone** flag and provide a valid base url.
+```bash
+# development
+npm run server:dev -- --standalone=http://localhost:8080/
+npm run server:dev:hmr -- --standalone=http://localhost:8080/
 
+# production
+npm run build:prod -- --standalone=http://localhost:8080/
+```
 ## Other commands
 
 ### build files
