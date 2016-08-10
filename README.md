@@ -123,11 +123,15 @@ npm run server
 npm run build:prod
 npm run server:prod
 ```
+
 ## Standalone
-If your remote server API is configured on a different adress you have to add the **--standalone** flag and provide a valid base url.
+If your remote server API is hosted on a different adress you have to add the **--standalone** flag and provide a valid base url.
+For additional configuration or custom behavior checkout 
+**config/webpack.common.js** and
+**src/platform/environment.ts**
 ```bash
 # development
-npm run server:dev -- --standalone=http://localhost:8080/
+npm run server -- --standalone=http://localhost:8080/
 npm run server:dev:hmr -- --standalone=http://localhost:8080/
 
 # production
