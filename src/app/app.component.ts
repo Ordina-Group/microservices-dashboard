@@ -7,6 +7,7 @@ import { AppState } from './app.service';
 import { Msdtopbar } from './topbar/topbar.component';
 import { Msdfilter } from './filter/filter.component';
 import { FilterService } from './services/filter.service';
+import { Msdlegend } from './legend/legend.component';
 
 /*
  * App Component
@@ -21,6 +22,7 @@ import { FilterService } from './services/filter.service';
   directives: [Msdtopbar, Msdfilter],
   template: `
     <msd-topbar></msd-topbar>
+    <msd-legend></msd-legend>
     <msd-filter></msd-filter>
   `,
   providers: [FilterService]
