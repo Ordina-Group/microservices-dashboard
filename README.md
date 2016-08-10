@@ -41,6 +41,7 @@ go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http
     * [Dependencies](#dependencies)
     * [Installing](#installing)
     * [Running the app](#running-the-app)
+    * [Standalone](#standalone)    
 * [Configuration](#configuration)
 * [Contributing](#contributing)
 * [TypeScript](#typescript)
