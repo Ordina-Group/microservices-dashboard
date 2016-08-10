@@ -9,7 +9,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "mockserver": "json-server -p 3030 --watch ./json-server/graph.json",
+    "mockserver": "json-server -p 9876 --watch ./json-server/graph.json",
     "rimraf": "rimraf",
     "tslint": "tslint",
     "typedoc": "typedoc",

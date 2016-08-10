@@ -1,19 +1,14 @@
 import {
     inject, addProviders, async
 } from '@angular/core/testing';
+import { BASE_ENDPOINT_TOKEN } from '../../platform/environment-tokens';
 import { Injector } from '@angular/core';
 import { Response, ResponseOptions, Http, BaseRequestOptions } from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { GraphService } from './';
 import { MsdGraph } from '../models';
 import { ERR_HTTP_GET_GRAPH } from '../constants';
-import { Endpoints, UrlConfig, ENDPOINTS_CONFIG } from './endpoints';
-const mockConfig: UrlConfig = {
-    protocol: 'http',
-    hostName: 'localhost',
-    port: '3039',
-};
-const urlConfig = { provide: ENDPOINTS_CONFIG, useValue: mockConfig };
+import { Endpoints } from './endpoints';
 const httpProvider = {
     provide: Http,
     useFactory: (backend, options) => {
@@ -32,7 +27,7 @@ describe('GraphService', () => {
             httpProvider,
             GraphService,
             Endpoints,
-            urlConfig
+            { provide: BASE_ENDPOINT_TOKEN, useValue: '' }
         ]);
     });
 

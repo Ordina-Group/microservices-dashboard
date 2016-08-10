@@ -1,17 +1,14 @@
-import { Injectable, Inject, forwardRef } from '@angular/core';
-import {
-    UrlConfig,
-    ENDPOINTS_CONFIG
-} from './';
+import { Injectable, Inject } from '@angular/core';
+import { BASE_ENDPOINT_TOKEN } from '../../../platform/environment-tokens';
 @Injectable()
 export class Endpoints {
 
-    private _config: UrlConfig;
+    private _baseUrl: string;
 
     constructor(
-        @Inject(forwardRef(() => ENDPOINTS_CONFIG)) config: UrlConfig
+        @Inject(BASE_ENDPOINT_TOKEN) baseUrl: string
     ) {
-        this._config = config;
+        this._baseUrl = baseUrl;
     }
 
     public get graph(): string {
@@ -19,8 +16,6 @@ export class Endpoints {
     }
 
     private _createEndpoint(path: string): string {
-        return this._config.port ?
-            `${this._config.protocol}://${this._config.hostName}:${this._config.port}/${path}` :
-            `${this._config.protocol}://${this._config.hostName}/${path}`;
+        return `${this._baseUrl}${path}`;
     }
 }
