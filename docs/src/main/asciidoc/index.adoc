@@ -167,7 +167,7 @@ When running the UI separately, ideally the Spring Boot server shouldn't serve t
 
 . First a basic build should be done:
 +
-[source,Shell,subs="verbatim,attributes"]
+[source,shell,subs="verbatim,attributes"]
 ----
 $ npm install
 ----
@@ -183,8 +183,11 @@ $ bower install
 +
 [source,shell,subs="verbatim,attributes"]
 ----
-$ gulp serve:conf
+$ gulp serve --standalone
 ----
+You can configure the location of the dashboard server by modifying the `baseUrl` in `gulp/conf.js`
+
+TIP: If you want to run the UI on an existing server, with potentially another port, execute `$ gulp build --standalone` and deploy the `dist` folder on that server.
 
 IMPORTANT: The Microservices Dashboard server needs to be started to get any data in the dashboard.
 
@@ -202,15 +205,15 @@ TIP: There are other samples available as well. See the <<samples,Samples>> sect
 +
 [source,shell,subs="verbatim,attributes"]
 ----
-git clone https://github.com/ordina-jworks/microservices-dashboard-server
+$ git clone https://github.com/ordina-jworks/microservices-dashboard-server
 ----
 
 . Once the clone is complete, you're ready to get the service up and running:
 +
 [source,shell,subs="verbatim,attributes"]
 ----
-cd microservices-dashboard-server/samples/microservices-dashboard-simple
-./mvnw spring-boot:run
+$ cd microservices-dashboard-server/samples/microservices-dashboard-simple
+$ ./mvnw spring-boot:run
 ----
 
 [[aggregation-configuration]]

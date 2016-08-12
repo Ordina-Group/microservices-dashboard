@@ -6,15 +6,14 @@
     .module('microServicesGui')
     .service('msdEventsService', Service);
 
-  Service.$inject = ['$rootScope', '$http', 'BASE_URL'];
+  Service.$inject = ['$rootScope', '$http'];
   /**
    * Responsible for managing the local event list state.
    * And managing the HTTP RESOURCE /events
    *
    * @param {any} $http
-   * @param {any} BASE_URL
    */
-  function Service($rootScope, $http, BASE_URL) {
+  function Service($rootScope, $http) {
     var _self = this;
     var _eventsToNodeIdMap;
     var _eventList = [];
@@ -37,7 +36,7 @@
     // //////////////
     function deleteAllEvents() {
       $rootScope.dataLoading = true;
-      return $http.delete(BASE_URL + 'events').then(function() {
+      return $http.delete('@@BASE_URL' + 'events').then(function() {
         setEventList([]);
         $rootScope.dataLoading = false;
         return true;
@@ -126,7 +125,7 @@
     }
     function request() {
       return $http
-        .get(BASE_URL + 'events')
+        .get('@@BASE_URL' + 'events')
         .then(function(response) {
           if (response.data) {
             setEventList(response.data);

@@ -28,6 +28,7 @@ exports.wiredep = {
   directory: 'bower_components'
 };
 
+exports.baseUrl = 'http://localhost:8080/';
 /**
  *  Common implementation for an error handler of a Gulp plugin
  */

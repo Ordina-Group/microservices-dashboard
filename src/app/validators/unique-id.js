@@ -6,8 +6,8 @@
     .module('microServicesGui')
     .directive('uniqueId', Directive);
 
-  Directive.$inject = ['$q', '$http', 'BASE_URL'];
-  function Directive($q, $http, BASE_URL) {
+  Directive.$inject = ['$q', '$http'];
+  function Directive($q, $http) {
     // Usage:
     //
     // Creates:
@@ -19,13 +19,13 @@
     };
     return directive;
 
-    function link(scope, element, attrs, ngModel) {
+    function link(scope, ele0ment, attrs, ngModel) {
       ngModel.$asyncValidators.uniqueId = function(modelValue, viewValue) {
         var value = modelValue || viewValue;
         var deferred = $q.defer();
 
         $http
-          .get(BASE_URL + 'graph')
+          .get('@@BASE_URL' + 'graph')
           .then(function(response) {
             if (response.data) {
               var nodes = response.data.nodes;

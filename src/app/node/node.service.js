@@ -10,7 +10,7 @@
     $http, $rootScope, GraphService,
 
     // constants
-    BASE_URL, UI_LANE, MS_LANE, RESOURCE_LANE, BE_LANE,
+    UI_LANE, MS_LANE, RESOURCE_LANE, BE_LANE,
 
     // events
     EVENT_NODES_CHANGED) {
@@ -49,7 +49,7 @@
       }
       if (node.id && data.isNewNode) {
         $http
-          .post(BASE_URL + 'node', node)
+          .post('@@BASE_URL' + 'node', node)
           .then(function() {
             GraphService.addNewNode(node);
             var oldLinks = GraphService.getGraph().links;
@@ -110,7 +110,7 @@
         updates.sourceNode.details.virtual = true;
         var preparedNode = stripUnneededProperties(updates.sourceNode);
         preparedNode.linkedToNodeIds = getTargetIndices(updates.toLinks);
-        $http.post(BASE_URL + 'node', preparedNode)
+        $http.post('@@BASE_URL' + 'node', preparedNode)
           .then(function() {
             var oldLinks = GraphService.getGraph().links;
             GraphService.getGraph().links = GraphService.updateToLinks(oldLinks, updates);
@@ -127,7 +127,7 @@
 
     function deleteNode(node) {
       if (typeof node.id !== 'undefined') {
-        return $http.delete(BASE_URL + 'node/' + node.id).then(function() {
+        return $http.delete('@@BASE_URL' + 'node/' + node.id).then(function() {
           var index = GraphService.findNodeIndex(node.id);
           var links = GraphService.getGraph().links;
           GraphService.removeLinkByNodeIndex(links, node.index);

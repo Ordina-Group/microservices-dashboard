@@ -9,3 +9,4 @@ src/app/config.js
 .vscode
 typings
 typings.json
+*.iml
