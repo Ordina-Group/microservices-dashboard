@@ -314,7 +314,7 @@ A detailed description of its purpose and characteristics can be found in the ht
 ===== Aggregation =====
 
 For each service returned from the service discovery, a top level node is created.
-For each nested entity found in the response of each health response, a node is created and being linked from the top level node. 
+For each nested entity found in the response of each health response, a node is created and being linked from the top level node.
 
 .Health aggregator configuration options
 |===
@@ -322,7 +322,7 @@ For each nested entity found in the response of each health response, a node is 
 
 | msdashboard.health.requestHeaders
 | Map of request header keys and values used for calling the services' health endpoint.
-| 
+|
 
 | msdashboard.health.filteredServices
 | List of names of services which should be ignored during health aggregation.
@@ -363,7 +363,7 @@ Your service must comply to the HAL format and expose an index under the root (`
 ===== Aggregation =====
 
 For each service returned from the service discovery, a top level node is created.
-For each unfiltered link found in the response of each index response, a node is created and being linked from the top level node. 
+For each unfiltered link found in the response of each index response, a node is created and being linked from the top level node.
 
 .Index aggregator configuration options
 |===
@@ -375,7 +375,7 @@ For each unfiltered link found in the response of each index response, a node is
 
 | msdashboard.index.requestHeaders
 | Map of request header keys and values used for calling the services' mappings endpoint.
-| 
+|
 
 | msdashboard.index.filteredServices
 | List of names of services which should be ignored during index aggregation.
@@ -423,7 +423,7 @@ A detailed description of its purpose and characteristics can be found in the ht
 ===== Aggregation =====
 
 For each service returned from the service discovery, a top level node is created.
-For each unfiltered mapping found in the response of each mappings response, a node is created and being linked to the top level node. 
+For each unfiltered mapping found in the response of each mappings response, a node is created and being linked to the top level node.
 
 .Mappings aggregator configuration options
 |===
@@ -435,7 +435,7 @@ For each unfiltered mapping found in the response of each mappings response, a n
 
 | msdashboard.mappings.requestHeaders
 | Map of request header keys and values used for calling the services' mappings endpoint.
-| 
+|
 
 | msdashboard.mappings.filteredServices
 | List of names of services which should be ignored during health aggregation.
@@ -479,7 +479,7 @@ For each interaction found in each contract returned by the pact broker, nodes a
 
 | msdashboard.pact.requestHeaders
 | Map of request header keys and values used for calling the services' mappings endpoint.
-| 
+|
 
 | msdashboard.pact.filteredServices
 | List of names of services which should be ignored during health aggregation.
@@ -645,6 +645,87 @@ Observable.from(discoveryClient.getServices())
                 .publish()
                 .autoConnect()
 ```
+
+[[secure-your-aggregators]]
+== Secure your aggregators ==
+
+When securing your architecture, you are likely securing the actuator endpoints as well.
+These endpoints are crucial for our aggregators to receive the proper information.
+By adding this feature, you can now configure which security strategy is added to the aggregator's outgoing requests.
+Bear in mind, this feature includes spring security, you have to disable Basic security
+if you are not using this feature or are using other security strategies than Basic.
+
+
+Currently we support 3 types of security strategies:
+
+=== OAuth2 ===
+When your architecture is implemented with the OAuth2 protocol, this option will propagate the token it receives from the OAuth2Context.
+If you do not have OAuth2 enabled, this won't work.
+
+=== JWT ===
+This option will propagate the Authorization header with Bearer token to your aggregator's outgoing requests
+
+=== Basic ===
+This option will propagate the Authorization header with Basic token to your aggregator's outgoing requests
+
+To apply security to the proper aggregator, go to your configuration file.
+
+.security aggregator configuration options
+|===
+| Property name |Description |Value |Default value
+
+| msdashboard.mappings.security
+| Adds the proper security headers
+| oauth2/jwt/basic
+| none
+
+| msdashboard.health.security
+| Adds the proper security headers
+| oauth2/jwt/basic
+| none
+
+| msdashboard.index.security
+| Adds the proper security headers
+| oauth2/jwt/basic
+| none
+
+| msdashboard.pact.security
+| Adds the proper security headers
+| oauth2/jwt/basic
+| none
+|===
+
+[source,yml,subs="verbatim,attributes"]
+.Full example of the configuration file using yml
+----
+security:
+  basic:
+    enabled: false
+msdashboard:
+  health:
+    security: oauth2
+  index:
+    enabled: true
+    security: oauth2
+  mappings:
+    enabled: true
+    security: oauth2
+  pact
+    security: oauth2
+----
+
+[source,properties,subs="verbatim,attributes"]
+.Using properties
+----
+security.basic.enabled=false
+msdashboard.health.security=oauth2
+msdashboard.index.enabled=true
+msdashboard.index.security=oauth2
+msdashboard.mappings.enabled=true
+msdashboard.mappings.security=oauth2
+msdashboard.pact.security=oauth2
+----
+
 
 [[graph-configuration]]
 == Graph configuration ==
