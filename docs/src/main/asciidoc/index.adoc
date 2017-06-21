@@ -652,9 +652,12 @@ Observable.from(discoveryClient.getServices())
 When securing your architecture, you are likely securing the actuator endpoints as well.
 These endpoints are crucial for our aggregators to receive the proper information.
 By adding this feature, you can now configure which security strategy is added to the aggregator's outgoing requests.
+
+[WARNING]
+====
 Bear in mind, this feature includes spring security, you have to disable Basic security
 if you are not using this feature or are using other security strategies than Basic.
-
+====
 
 Currently we support 3 types of security strategies:
 
@@ -667,6 +670,12 @@ This option will propagate the Authorization header with Bearer token to your ag
 
 === Basic ===
 This option will propagate the Authorization header with Basic token to your aggregator's outgoing requests
+
+
+[NOTE]
+====
+The JWT & Basic strategy are based on filters that extract the token from the incoming requests and place it in the security context holder.
+====
 
 To apply security to the proper aggregator, go to your configuration file.
 
